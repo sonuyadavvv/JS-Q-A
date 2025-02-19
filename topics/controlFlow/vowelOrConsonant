@@ -1,0 +1,22 @@
+
+//5. Write a function that takes a single character (letter) as input and
+//returns "vowel" or "consonant". (Handle uppercase and lowercase).
+
+function vowelConsonantChecker(character)
+{
+    character=character.toLowerCase();
+
+    if(character==='a' || character==='e' || character==='i' || character==='o' || character==='u')
+    {
+        return 'vowel';
+    }
+    else
+    {
+        return 'consonant';
+    }
+}
+
+let check=vowelConsonantChecker('I');
+console.log(check);
+
+
