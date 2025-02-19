@@ -1,0 +1,37 @@
+//7.Number Range: Write a function that takes a number as input and
+//returns a string indicating which range it falls into (e.g., 0-10, 11-20, 21-30, etc.).
+
+function numberRange(number)
+
+{
+    if(number>10)
+    {
+    let n1=Math.floor(number/10);
+
+   let lowerLimit=(n1*10)+1;
+   let upperLimit=(n1+1)*10
+
+
+    if(number<lowerLimit)
+    {
+        return `${lowerLimit-10}-${upperLimit-10}`;
+    }
+    else
+    {
+
+        return `${lowerLimit}-${upperLimit}`
+    }
+    }
+    else
+    {
+        return '0-10';
+    }
+
+}
+
+console.log(numberRange(2));
+console.log(numberRange(41));
+console.log(numberRange(30));
+
+
+
